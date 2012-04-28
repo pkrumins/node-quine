@@ -1,0 +1,28 @@
+{
+    "name": "quine",
+    "version": "1.0.0",
+    "main": "index.js",
+    "description": "A node.js module that exports a function that prints itself",
+    "keywords": [
+        "quine",
+        "fixed point",
+        "meta"
+    ],
+    "author": {
+        "name": "Peteris Krumins",
+        "email": "peteris.krumins@gmail.com",
+        "web": "http://www.catonmat.net",
+        "twitter": "pkrumins"
+    }, 
+    "license": {
+        "type": "MIT"
+    }, 
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/pkrumins/node-quine.git" 
+    }, 
+    "engines": {
+        "node": ">=0.2.0"
+    }
+}
+
