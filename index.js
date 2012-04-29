@@ -1,4 +1,5 @@
-var data = "module.exports = function () { console.log(\"var data = \\\"%s\\\"\\n%s\", data.replace(/\\\\/g, \"\\\\\\\\\").replace(/\"/g, \"\\\\\\\"\"), data.replace(/{/, \"{\\n   \").replace(/}$/, \"\\n}\")); }"
+var data = require('fs').readFileSync(module.filename, 'utf8');
 module.exports = function () {
-    console.log("var data = \"%s\"\n%s", data.replace(/\\/g, "\\\\").replace(/"/g, "\\\""), data.replace(/{/, "{\n   ").replace(/}$/, "\n}"));
-}
+    console.log(data);
+};
+if (module === require.main) module.exports();
